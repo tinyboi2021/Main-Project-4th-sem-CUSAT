@@ -4,11 +4,12 @@ import ollama  # pip install ollama
 
 # --- 1. CONFIGURATION ---
 MODEL_NAME = "llama3:latest"  # Or "llama3:latest"
-FILE_PATH = r"/home/tom_mscds24/data/Apple_Final_Merged_Dataset.csv"  # Update this path if needed
-OUTPUT_PATH = "Apple_Informer_Sentiment_Ollama.csv"
+FILE_PATH = r"/home/tom_mscds24/data/Toyota_Final_Merged_Dataset.csv"  # Update this path if needed
+OUTPUT_PATH = "Toyota_Informer_Sentiment_Ollama.csv"
 
 # --- 2. SCORING FUNCTION ---
 def get_daily_sentiment_ollama(headline_text):
+
     """
     Uses local Ollama (Llama 3) to score headlines.
     Returns average score (0=Neg, 1=Neu, 2=Pos).
